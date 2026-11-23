@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Colores oficiales del manual de marca de Plastikinesis (Brand Guidelines 2026). */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-petroleo: #191b27;
+  --color-petroleo-2: #242737;
+  --color-grisaceo: #dae1eb;
+  --color-niebla: #f3f5f9;
+  --color-naranja: #e6a666;
+  --color-rojo: #d24220;
+  --color-rojo-hondo: #b5361a;
+  --color-ink: #191b27;
+  --color-acero: #4f5668;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-lexend);
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+p,
+li,
+dd {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--color-rojo);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rojo);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Menús que aparecen: fade corto, nunca desde cero. */
+.pop-in {
+  transition:
+    opacity 180ms var(--ease-out-strong),
+    transform 180ms var(--ease-out-strong);
+  @starting-style {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
 }
