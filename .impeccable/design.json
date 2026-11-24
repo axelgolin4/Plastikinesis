@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T23:29:19.359Z",
+  "title": "Design System: Plastikinesis",
+  "extensions": {
+    "colorMeta": {
+      "petroleo": {
+        "role": "neutral",
+        "displayName": "Azul petróleo oscuro (oficial)",
+        "canonical": "#191b27",
+        "tonalRamp": [
+          "#11121a",
+          "#13151f",
+          "#161823",
+          "#191b27",
+          "#5e5f68",
+          "#98989e",
+          "#c6c6c9",
+          "#e8e8e9"
+        ]
+      },
+      "petroleo-2": {
+        "role": "neutral",
+        "displayName": "Petróleo 2 (derivado, hover)",
+        "canonical": "#242737",
+        "tonalRamp": [
+          "#151721",
+          "#1a1c28",
+          "#1f2230",
+          "#242737",
+          "#666873",
+          "#9c9ea5",
+          "#c8c9cd",
+          "#e9e9eb"
+        ]
+      },
+      "grisaceo": {
+        "role": "neutral",
+        "displayName": "Azul grisáceo claro (oficial)",
+        "canonical": "#dae1eb",
+        "tonalRamp": [
+          "#5e6169",
+          "#878c94",
+          "#b1b6c0",
+          "#dae1eb",
+          "#e5eaf1",
+          "#eef2f6",
+          "#f6f8fa",
+          "#fbfcfd"
+        ]
+      },
+      "niebla": {
+        "role": "neutral",
+        "displayName": "Niebla (derivado, superficie)",
+        "canonical": "#f3f5f9",
+        "tonalRamp": [
+          "#68696e",
+          "#96989d",
+          "#c5c6cb",
+          "#f3f5f9",
+          "#f7f8fb",
+          "#fafbfc",
+          "#fcfdfe",
+          "#fefefe"
+        ]
+      },
+      "naranja": {
+        "role": "secondary",
+        "displayName": "Naranja cálido (oficial)",
+        "canonical": "#e6a666",
+        "tonalRamp": [
+          "#634a34",
+          "#8e6844",
+          "#ba8755",
+          "#e6a666",
+          "#eec194",
+          "#f4d7ba",
+          "#f9e9d9",
+          "#fdf6f0"
+        ]
+      },
+      "rojo": {
+        "role": "primary",
+        "displayName": "Rojo anaranjado (oficial)",
+        "canonical": "#d24220",
+        "tonalRamp": [
+          "#5b2218",
+          "#822c1a",
+          "#aa371d",
+          "#d24220",
+          "#e07b63",
+          "#ebaa9b",
+          "#f4d0c7",
+          "#fbece9"
+        ]
+      },
+      "rojo-hondo": {
+        "role": "primary",
+        "displayName": "Rojo hondo (derivado, hover y enlaces)",
+        "canonical": "#b5361a",
+        "tonalRamp": [
+          "#4f1d15",
+          "#712517",
+          "#932e18",
+          "#b5361a",
+          "#cb725f",
+          "#dea598",
+          "#edcdc6",
+          "#f8ebe8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta (alias de petróleo)",
+        "canonical": "#191b27",
+        "tonalRamp": [
+          "#11121a",
+          "#13151f",
+          "#161823",
+          "#191b27",
+          "#5e5f68",
+          "#98989e",
+          "#c6c6c9",
+          "#e8e8e9"
+        ]
+      },
+      "acero": {
+        "role": "neutral",
+        "displayName": "Acero (derivado, texto secundario)",
+        "canonical": "#4f5668",
+        "tonalRamp": [
+          "#262a34",
+          "#343846",
+          "#414757",
+          "#4f5668",
+          "#848995",
+          "#b0b3bb",
+          "#d3d5d9",
+          "#edeef0"
+        ]
+      },
+      "blanco": {
+        "role": "neutral",
+        "displayName": "Blanco",
+        "canonical": "#fffff",
+        "tonalRamp": [
+          "#6d6d11",
+          "#9d9e10",
+          "#cece10",
+          "#fffff",
+          "#ffff57",
+          "#ffff93",
+          "#ffffc3",
+          "#ffffe7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (Lexend, sustituto de Quantify)",
+        "purpose": "Solo el titular del hero de inicio."
+      },
+      "headline": {
+        "displayName": "Headline (Lexend)",
+        "purpose": "Títulos de sección, 1.875rem a 2.25rem."
+      },
+      "title": {
+        "displayName": "Title (Lexend)",
+        "purpose": "Títulos de tarjeta y etapa."
+      },
+      "lead": {
+        "displayName": "Lead (Inter, sustituto de Helvetica Now)",
+        "purpose": "Bajada bajo titulares."
+      },
+      "body": {
+        "displayName": "Body (Inter)",
+        "purpose": "Texto de tarjetas y listas."
+      },
+      "label": {
+        "displayName": "Label (Inter)",
+        "purpose": "Botones, etiquetas de formulario, chips."
+      }
+    },
+    "shadows": [
+      {
+        "name": "flotante-accion",
+        "value": "0 10px 24px -8px rgba(25,27,39,0.6)",
+        "purpose": "Botón flotante Llamar."
+      },
+      {
+        "name": "flotante-accion-rojo",
+        "value": "0 10px 24px -8px rgba(210,66,32,0.7)",
+        "purpose": "Botón flotante WhatsApp."
+      },
+      {
+        "name": "pildora-foto",
+        "value": "0 12px 24px -10px rgba(25,27,39,0.6)",
+        "purpose": "Píldoras rojas sobre la foto del hero."
+      },
+      {
+        "name": "menu",
+        "value": "0 20px 40px -16px rgba(25,27,39,0.35)",
+        "purpose": "Submenú de Servicios."
+      },
+      {
+        "name": "hover-tarjeta",
+        "value": "0 24px 40px -24px rgba(25,27,39,0.35)",
+        "purpose": "Tarjeta de servicio al hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-strong",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Entrada de menús (pop-in) y estados de botón."
+      },
+      {
+        "name": "estado-boton",
+        "value": "150ms",
+        "purpose": "Cambio de color y escala 0.97 al presionar."
+      },
+      {
+        "name": "hover-tarjeta",
+        "value": "200ms ease-out",
+        "purpose": "La tarjeta sube 4px y la flecha avanza 4px."
+      },
+      {
+        "name": "pop-in",
+        "value": "180ms desde opacity 0 y translateY(-4px)",
+        "purpose": "Menú móvil."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "Con prefers-reduced-motion, transiciones a 1ms y scroll sin suavizado."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón WhatsApp",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Acción principal: enviar el proyecto por WhatsApp.",
+      "html": "<a class=\"ds-btn ds-btn-wa\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/></svg> WhatsApp</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border:none;border-radius:9999px;font-family:Inter,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color 150ms cubic-bezier(0.23,1,0.32,1),transform 150ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:2px solid #d24220;outline-offset:3px;} .ds-btn-wa{background:#d24220;color:#fff;} .ds-btn-wa:hover{background:#b5361a;}"
+    },
+    {
+      "name": "Botón Llamar",
+      "kind": "button",
+      "refersTo": "button-llamar",
+      "description": "Par de igual peso junto a WhatsApp, sobre fondos claros.",
+      "html": "<a class=\"ds-btn ds-btn-call\" href=\"#\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z\"/></svg> Llamar 5544-7261</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border:none;border-radius:9999px;font-family:Inter,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color 150ms cubic-bezier(0.23,1,0.32,1),transform 150ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:2px solid #d24220;outline-offset:3px;} .ds-btn-call{background:#191b27;color:#fff;font-variant-numeric:tabular-nums;} .ds-btn-call:hover{background:#242737;}"
+    },
+    {
+      "name": "Botón Llamar sobre oscuro",
+      "kind": "button",
+      "refersTo": "button-llamar-oscuro",
+      "description": "Variante blanca de Llamar sobre petróleo (hero y cierre).",
+      "html": "<div class=\"ds-dark-wrap\"><a class=\"ds-btn ds-btn-call-dark\" href=\"#\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z\"/></svg> Llamar</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border:none;border-radius:9999px;font-family:Inter,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color 150ms cubic-bezier(0.23,1,0.32,1),transform 150ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:2px solid #d24220;outline-offset:3px;} .ds-dark-wrap{background:#191b27;padding:24px;border-radius:24px;} .ds-btn-call-dark{background:#fff;color:#191b27;} .ds-btn-call-dark:hover{background:#dae1eb;}"
+    },
+    {
+      "name": "Selector de pieza",
+      "kind": "chip",
+      "refersTo": "chip-pieza",
+      "description": "Chips «¿Qué tienes de tu pieza?» que arman el mensaje de WhatsApp.",
+      "html": "<div class=\"ds-picker\"><p class=\"ds-picker-legend\">¿Qué tienes de tu pieza?</p><div class=\"ds-chips\"><button class=\"ds-chip\">Una fotografía</button><button class=\"ds-chip ds-chip-on\">La pieza o una muestra</button><button class=\"ds-chip\">Un plano técnico</button><button class=\"ds-chip\">Un modelo CAD</button></div></div>",
+      "css": ".ds-picker{background:#191b27;padding:24px;border-radius:24px;} .ds-picker-legend{margin:0 0 12px;font-family:Lexend,sans-serif;font-weight:600;color:#fff;} .ds-chips{display:flex;flex-wrap:wrap;gap:8px;} .ds-chip{min-height:44px;padding:0 16px;border-radius:9999px;border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.1);color:#fff;font-family:Inter,sans-serif;font-size:0.875rem;font-weight:500;cursor:pointer;transition:background-color 150ms;} .ds-chip:hover{background:rgba(255,255,255,0.2);} .ds-chip:focus-visible{outline:2px solid #fff;outline-offset:2px;} .ds-chip-on,.ds-chip-on:hover{background:#e6a666;border-color:#e6a666;color:#191b27;}"
+    },
+    {
+      "name": "Tarjeta de servicio",
+      "kind": "card",
+      "refersTo": "card-servicio",
+      "description": "Servicio con ícono en línea con el título; sube al hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><h3 class=\"ds-card-title\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#d24220\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"/><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"/><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"/><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"/><path d=\"M7 12h10\"/></svg><span>Ingeniería inversa y rediseño</span></h3><p class=\"ds-card-text\">Reproducimos y mejoramos componentes a partir de muestras, planos o especificaciones.</p><span class=\"ds-card-link\">Ver servicio <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></a>",
+      "css": ".ds-card{display:flex;flex-direction:column;max-width:300px;padding:28px;border-radius:24px;background:#fff;box-shadow:0 0 0 1px #dae1eb;text-decoration:none;transition:box-shadow 200ms ease-out,transform 200ms ease-out;} .ds-card:hover{transform:translateY(-4px);box-shadow:0 0 0 1px #dae1eb,0 24px 40px -24px rgba(25,27,39,0.35);} .ds-card:focus-visible{outline:2px solid #d24220;outline-offset:3px;} .ds-card-title{display:flex;gap:12px;align-items:flex-start;margin:0;font-family:Lexend,sans-serif;font-size:1.25rem;font-weight:600;line-height:1.375;color:#191b27;} .ds-card-title svg{flex-shrink:0;margin-top:2px;} .ds-card-text{margin:12px 0 0;font-family:Inter,sans-serif;line-height:1.625;color:#4f5668;} .ds-card-link{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-family:Inter,sans-serif;font-weight:600;color:#b5361a;} .ds-card-link svg{transition:transform 200ms;} .ds-card:hover .ds-card-link svg{transform:translateX(4px);}"
+    },
+    {
+      "name": "Campo de formulario",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo del formulario de contacto que arma el mensaje.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Nombre</span><input class=\"ds-input\" placeholder=\"Tu nombre\"></label>",
+      "css": ".ds-field{display:block;max-width:320px;} .ds-label{display:block;margin-bottom:6px;font-family:Inter,sans-serif;font-size:0.875rem;font-weight:600;color:#191b27;} .ds-input{width:100%;min-height:48px;padding:12px 16px;border:1px solid #dae1eb;border-radius:16px;background:#fff;color:#191b27;font-family:Inter,sans-serif;font-size:1rem;outline:none;transition:border-color 150ms,box-shadow 150ms;} .ds-input:focus{border-color:#d24220;box-shadow:0 0 0 2px rgba(210,66,32,0.2);}"
+    },
+    {
+      "name": "Navegación",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Encabezado fijo blanco con enlaces en acero, activo en rojo y el par de acciones.",
+      "html": "<nav class=\"ds-nav\"><strong class=\"ds-nav-brand\">Plastikinesis</strong><ul class=\"ds-nav-links\"><li><a class=\"ds-nav-link ds-nav-active\" href=\"#\">Inicio</a></li><li><a class=\"ds-nav-link\" href=\"#\">Nosotros</a></li><li><a class=\"ds-nav-link\" href=\"#\">Servicios</a></li><li><a class=\"ds-nav-link\" href=\"#\">Contacto</a></li></ul><div class=\"ds-nav-actions\"><a class=\"ds-nav-btn ds-nav-call\" href=\"#\">Llamar</a><a class=\"ds-nav-btn ds-nav-wa\" href=\"#\">WhatsApp</a></div></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 24px;background:rgba(255,255,255,0.95);border-bottom:1px solid #dae1eb;font-family:Inter,sans-serif;} .ds-nav-brand{font-family:Lexend,sans-serif;color:#191b27;} .ds-nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0;} .ds-nav-link{font-size:0.95rem;font-weight:500;color:#4f5668;text-decoration:none;transition:color 150ms;} .ds-nav-link:hover,.ds-nav-active{color:#d24220;} .ds-nav-link:focus-visible{outline:2px solid #d24220;outline-offset:3px;border-radius:6px;} .ds-nav-actions{display:flex;gap:8px;} .ds-nav-btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:9999px;font-size:0.875rem;font-weight:600;color:#fff;text-decoration:none;transition:background-color 150ms,transform 150ms;} .ds-nav-btn:active{transform:scale(0.97);} .ds-nav-call{background:#191b27;} .ds-nav-call:hover{background:#242737;} .ds-nav-wa{background:#d24220;} .ds-nav-wa:hover{background:#b5361a;}"
+    },
+    {
+      "name": "Escala de producción",
+      "kind": "custom",
+      "refersTo": "escala",
+      "description": "Firma: barras rojo→naranja de prototipo a producción en serie sobre petróleo.",
+      "html": "<ol class=\"ds-scale\"><li><span class=\"ds-bar\" style=\"height:24px\"></span><b>Prototipo</b></li><li><span class=\"ds-bar\" style=\"height:48px\"></span><b>Repuesto único</b></li><li><span class=\"ds-bar\" style=\"height:96px\"></span><b>Lotes cortos</b></li><li><span class=\"ds-bar\" style=\"height:160px\"></span><b>Producción en serie</b></li></ol>",
+      "css": ".ds-scale{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:0;padding:32px;list-style:none;background:#191b27;border-radius:24px;} .ds-scale li{display:flex;flex-direction:column;justify-content:flex-end;min-height:200px;} .ds-bar{display:block;width:56px;border-radius:12px 12px 0 0;background:linear-gradient(to top,#d24220,#e6a666);} .ds-scale b{display:block;padding-top:20px;border-top:1px solid rgba(255,255,255,0.15);font-family:Lexend,sans-serif;font-weight:600;color:#fff;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El taller sobre petróleo",
+    "overview": "Plastikinesis se ve como un taller confiable puesto sobre el azul petróleo de su manual de marca: bandas oscuras con las ondas fluidas rojo-naranja de la marca abren y cierran cada página, y entre ellas el contenido respira sobre blanco y azul grisáceo claro. Las piezas reales (polímero, planta, robótica) hacen el trabajo de convencer; la interfaz solo las enmarca en tarjetas muy redondeadas, como en el brochure del cliente.\n\nLa densidad es media y directa, pensada para jefes de mantenimiento que revisan desde el celular en planta: titulares cortos en Lexend, texto en Inter con interlineado amplio, y las dos acciones de contacto (WhatsApp y Llamar) siempre del mismo tamaño y siempre visibles, en el encabezado, en el hero, en el cierre y en los botones flotantes. El mundo rechaza el sitio industrial genérico de stock gris, engranes y tres tarjetas iguales.\n\nEl color manda por bloques, no por adorno: petróleo para hero, bandas y pie; azul grisáceo para secciones alternas; rojo anaranjado solo para acciones y marcas de progreso; naranja cálido como acento secundario sobre oscuro.",
+    "keyCharacteristics": [
+      "Alternancia de bandas: petróleo con ondas, blanco, azul grisáceo, petróleo sólido.",
+      "Píldoras para toda acción; tarjetas de 24px para todo contenedor.",
+      "WhatsApp y Llamar como par de igual peso en cada punto de decisión.",
+      "Fotos reales de piezas y planta en marcos redondeados, nunca íconos ilustrativos grandes.",
+      "Logo oficial sin alterar, en versión oscura sobre claro y blanca sobre oscuro."
+    ],
+    "rules": [
+      {
+        "name": "The Manual Intacto Rule",
+        "body": "Los cuatro colores oficiales (#191B27, #DAE1EB, #E6A666, #D24220) no se alteran ni se sustituyen. Los derivados (rojo-hondo, petroleo-2, niebla, acero) existen solo para estados, texto y superficies de apoyo; nunca reemplazan a un oficial en su papel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rojo Es Acción Rule",
+        "body": "El rojo anaranjado marca lo que se toca o lo que avanza (botones, pasos, barras de escala). No se usa como fondo de banda ni como decoración.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sustitución Declarada Rule",
+        "body": "Quantify y Helvetica Now no tienen archivos web; Lexend e Inter son sus sustitutos explícitos. Si el cliente entrega archivos web oficiales, se reemplazan las variables `--font-display` y `--font-sans` sin tocar la jerarquía.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lexend Titula Rule",
+        "body": "Lexend solo para titulares, títulos de tarjeta, números de paso y el lema; todo lo demás en Inter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Acción a la Mano Rule",
+        "body": "En cada vista hay un par WhatsApp/Llamar alcanzable: en el encabezado (escritorio), en el menú móvil, en el hero, en el cierre y en los botones flotantes fijos abajo a la derecha (Llamar 52px petróleo, WhatsApp 56px rojo).",
+        "section": "layout"
+      },
+      {
+        "name": "The Plano Hasta Tocar Rule",
+        "body": "Tarjetas y secciones no llevan sombra en reposo; la sombra aparece al hover o en lo que flota sobre el contenido.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar el logo oficial del manual tal cual: versión oscura sobre fondos claros y versión blanca sobre petróleo, escalado solo por alto.",
+      "**Do** mantener WhatsApp (rojo) y Llamar (petróleo o blanco) del mismo tamaño y lado a lado en cada punto de decisión.",
+      "**Do** abrir las páginas internas con el encabezado petróleo de ondas y cerrarlas con la tarjeta de cierre de 24px.",
+      "**Do** usar Lexend para titulares e Inter para texto, declarados como sustitutos de Quantify y Helvetica Now.",
+      "**Do** redondear tarjetas y fotos a 24px y toda acción a píldora completa.",
+      "**Do** usar rojo-hondo para enlaces de texto pequeños sobre claro."
+    ],
+    "donts": [
+      "**Don't** aplicar al logo sombras, brillos, contornos, cambios de color, rotación, inclinación ni cambios de disposición, ni combinarlo con colores no autorizados.",
+      "**Don't** modificar los cuatro colores oficiales ni crear nuevos tonos de marca más allá de los derivados de estado documentados.",
+      "**Don't** usar rojo como fondo de banda o de sección.",
+      "**Don't** usar fotos de stock gris genérico, engranes decorativos ni retículas de tres tarjetas iguales.",
+      "**Don't** poner sombra a tarjetas en reposo."
+    ]
+  }
+}

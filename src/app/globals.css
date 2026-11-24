@@ -1,16 +1,59 @@
 @import "tailwindcss";
 
-/* Colores oficiales del manual de marca de Plastikinesis (Brand Guidelines 2026). */
+/* Modo oscuro por clase en <html>, controlado por el botón de tema. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Superficies y textos que cambian con el tema. */
+:root {
+  --fondo: #ffffff;
+  --superficie: #f3f5f9;
+  --banda: #dae1eb;
+  --tarjeta: #ffffff;
+  --texto: #191b27;
+  --texto-2: #4f5668;
+  --borde: #dae1eb;
+  --enlace: #b5361a;
+  --btn2: #191b27;
+  --btn2-hover: #242737;
+  --btn2-texto: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --fondo: #11131c;
+  --superficie: #1b1e2b;
+  --banda: #191b27;
+  --tarjeta: #1b1e2b;
+  --texto: #eef1f6;
+  --texto-2: #b4bccb;
+  --borde: #2c3042;
+  --enlace: #f08a63;
+  --btn2: #dae1eb;
+  --btn2-hover: #ffffff;
+  --btn2-texto: #191b27;
+  color-scheme: dark;
+}
+
+/* Colores oficiales del manual de marca de Plastikinesis (Brand Guidelines 2026) y tokens de tema. */
 @theme inline {
   --color-petroleo: #191b27;
   --color-petroleo-2: #242737;
   --color-grisaceo: #dae1eb;
-  --color-niebla: #f3f5f9;
   --color-naranja: #e6a666;
   --color-rojo: #d24220;
   --color-rojo-hondo: #b5361a;
-  --color-ink: #191b27;
-  --color-acero: #4f5668;
+
+  --color-fondo: var(--fondo);
+  --color-superficie: var(--superficie);
+  --color-banda: var(--banda);
+  --color-tarjeta: var(--tarjeta);
+  --color-texto: var(--texto);
+  --color-texto-2: var(--texto-2);
+  --color-borde: var(--borde);
+  --color-enlace: var(--enlace);
+  --color-btn2: var(--btn2);
+  --color-btn2-hover: var(--btn2-hover);
+  --color-btn2-texto: var(--btn2-texto);
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-lexend);
@@ -23,8 +66,8 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: var(--color-ink);
+  background: var(--fondo);
+  color: var(--texto);
 }
 
 p,
@@ -52,6 +95,26 @@ dd {
   @starting-style {
     opacity: 0;
     transform: translateY(-4px);
+  }
+}
+
+/* Mosaico de industrias: la lista de piezas aparece al pasar el cursor, al enfocar o al tocar. */
+.industria-piezas {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 200ms var(--ease-out-strong),
+    transform 200ms var(--ease-out-strong);
+}
+.industria:focus-within .industria-piezas,
+.industria[data-abierta="true"] .industria-piezas {
+  opacity: 1;
+  transform: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .industria:hover .industria-piezas {
+    opacity: 1;
+    transform: none;
   }
 }
 

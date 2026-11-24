@@ -2,22 +2,21 @@
 
 import { useState } from "react";
 import ContactActions from "./ContactActions";
-import { tienePieza } from "@/data/site";
+import { getContent } from "@/data/content";
 
 // El cliente marca qué tiene de su pieza y el mensaje de WhatsApp sale escrito.
-export default function PiecePicker() {
+export default function PiecePicker({ lang }) {
+  const { picker, ui } = getContent(lang);
   const [eleccion, setEleccion] = useState(null);
-  const elegida = tienePieza.find((t) => t.id === eleccion);
-  const mensaje = elegida
-    ? `Hola, tengo ${elegida.frase} y quiero una propuesta de Plastikinesis para fabricarla.`
-    : undefined;
+  const elegida = picker.opciones.find((t) => t.id === eleccion);
+  const mensaje = elegida ? picker.mensaje(elegida.frase) : undefined;
 
   return (
     <div>
       <fieldset>
-        <legend className="font-display font-semibold text-white">¿Qué tienes de tu pieza?</legend>
+        <legend className="font-display font-semibold text-white">{picker.pregunta}</legend>
         <div className="mt-3 flex flex-wrap gap-2">
-          {tienePieza.map((t) => {
+          {picker.opciones.map((t) => {
             const marcada = t.id === eleccion;
             return (
               <label
@@ -43,9 +42,9 @@ export default function PiecePicker() {
         </div>
       </fieldset>
       <p className="mt-3 min-h-5 text-sm text-white/70" aria-live="polite">
-        {elegida ? `Tu mensaje dirá: «${mensaje}»` : "Marca una opción y el mensaje sale escrito."}
+        {elegida ? picker.vistaPrevia(mensaje) : picker.ayuda}
       </p>
-      <ContactActions mensaje={mensaje} dark className="mt-5" />
+      <ContactActions ui={ui} mensaje={mensaje} dark className="mt-5" />
     </div>
   );
 }

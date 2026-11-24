@@ -11,6 +11,15 @@ const nextConfig = {
       },
     },
   },
+  // El sitio vive en /es y /en; las rutas sin idioma van a español.
+  async redirects() {
+    return [
+      { source: "/", destination: "/es", permanent: false },
+      { source: "/industrias", destination: "/es/servicios", permanent: true },
+      { source: "/:pagina(nosotros|servicios|contacto)", destination: "/es/:pagina", permanent: true },
+      { source: "/servicios/:slug", destination: "/es/servicios/:slug", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;
